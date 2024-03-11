@@ -208,7 +208,7 @@ To run this from Postman, select "POST" , paste the API invoke url. Then under "
 
 To run this from terminal using Curl, run the below
 
-$ curl -X POST -d "{\"operation\":\"create\",\"tableName\":\"lambda-apigateway\",\"payload\":{\"Item\":{\"id\":\"1\",\"name\":\"Bob\"}}}" https://$API.execute-api.$REGION.amazonaws.com/prod/DynamoDBManager
+    $ curl -X POST -d "{\"operation\":\"create\",\"tableName\":\"lambda-apigateway\",\"payload\":{\"Item\":{\"id\":\"1\",\"name\":\"Bob\"}}}" https://$API.execute-api.$REGION.amazonaws.com/prod/DynamoDBManager
 3. To validate that the item is indeed inserted into DynamoDB table, go to Dynamo console, select "lambda-apigateway" table, select "Explore item" tab, and the newly inserted item should be displayed.
 
 ![image](https://github.com/Titli03/Serverless/assets/89897324/ba87f45c-946e-4ea2-a081-dec4ced2983b)
