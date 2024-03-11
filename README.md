@@ -99,6 +99,7 @@ Let's test our newly created function. We haven't created DynamoDB and the API y
 
 
 3. Click "Test", and it will execute the test event. You should see the output in the console. 
+![image](https://github.com/Titli03/Serverless/assets/89897324/e864db15-d5b4-4598-a2f5-c954caa23956)
 
 
 
