@@ -5,6 +5,7 @@ This project will demonstrate the creation of CRUD microservice using Serverless
 You can create a Lambda function (LambdaFunctionOverHttps) using the AWS Lambda console. Next, you create a DynamoDB (lambda-apigateway) table using the DynamoDB console. Next, you create an REST API (DynamoDBOperations) using  the API Gateway console and define one method (POST) on it. Then you test your API.
 
 Design Overview:
+![image](https://github.com/Titli03/Serverless/assets/89897324/efaf1692-7f3c-422b-a2c3-c9146a0cd633)
 
 When you invoke your REST API, API Gateway routes the request to your Lambda function. The method (POST) for REST API (DynamoDBManager) is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function. The Lambda function will run the logic (as per the code updated in the function) interacts with DynamoDB and returns a response to API Gateway. API Gateway then returns a response to you.
 
