@@ -179,7 +179,7 @@ In this step, you deploy the API that you created to a stage called prod.
 
 1. Select "Deploy API"
 
-2. Now it is going to ask you about a stage. Select "[New Stage]" for "Deployment stage". Give "Prod" as "Stage name". Click "Deploy"
+2. Now it is going to ask you about a stage. Select "[New Stage]". Give "Prod" as "Stage name". Click "Deploy"
 ![image](https://github.com/Titli03/Serverless/assets/89897324/fa312aba-a546-4a1b-bd12-5d6c07b950a2)
 
 3. We're all set to run our solution! To invoke our API endpoint, we need the endpoint URL. In the "Stages" screen, expand the stage "Prod", select "POST" method, and copy the "Invoke URL" from screen
@@ -188,7 +188,8 @@ In this step, you deploy the API that you created to a stage called prod.
 
 ### Running our solution
 1. The Lambda function supports using the create operation to create an item in your DynamoDB table. To request this operation, use the following JSON
-   ![image](https://github.com/Titli03/Serverless/assets/89897324/52507e7e-c3bf-4771-97b7-7d5b26e8d5a7)
+
+![image](https://github.com/Titli03/Serverless/assets/89897324/52507e7e-c3bf-4771-97b7-7d5b26e8d5a7)
 
 
 2. To execute our API from local machine, we are going to use Postman and Curl command. You can choose either method based on your convenience and familiarity.
