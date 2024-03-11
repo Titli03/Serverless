@@ -23,6 +23,7 @@ Other operations (echo, ping), not related to DynamoDB, that you can use for tes
 The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
 The following is a sample request payload for a DynamoDB create item operation: 
+
 ![image](https://github.com/Titli03/Serverless/assets/89897324/29216be2-8086-462e-ba8c-25c15e23d7e3)
 
 
