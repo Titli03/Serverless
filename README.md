@@ -82,11 +82,13 @@ Let's test our newly created function. We haven't created DynamoDB and the API y
 
 
 1. Click the arrow on "Select a test event" and click "Configure test events"
+![image](https://github.com/Titli03/Serverless/assets/89897324/cde854e0-e6fd-4b5d-ae41-cc4d6b0bbfcd)
 
 
 
 
 2. Paste the following JSON into the event. The field "operation" dictates what the lambda function will perform. In this case, it'd simply return the payload from input event as output. Click "Create" to save
+![image](https://github.com/Titli03/Serverless/assets/89897324/5e11fcd6-e0bb-4a7c-8918-1ef9400a2733)
 
 
 
