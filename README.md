@@ -12,11 +12,11 @@ When you invoke your REST API, API Gateway routes the request to your Lambda fun
 
 The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
 
-* Create, update, and delete an item.
+- Create, update, and delete an item.
 
 - Read an item.
 
-* Scan an item.
+- Scan an item.
 
 Other operations (echo, ping), not related to DynamoDB, that you can use for testing.
 
