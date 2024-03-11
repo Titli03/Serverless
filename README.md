@@ -29,6 +29,7 @@ The following is a sample request payload for a DynamoDB create item operation:
 
 
 The following is a sample request payload for a DynamoDB read item operation:
+
 ![image](https://github.com/Titli03/Serverless/assets/89897324/ad551c74-acf0-4186-bf33-d6764b6a8865)
 
 
