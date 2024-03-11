@@ -49,7 +49,6 @@ To create an execution role
 - Permissions – Custom policy with permission to DynamoDB and CloudWatch Logs. This custom policy has the permissions that the function needs to write data to DynamoDB and upload logs.
 
 ![image](https://github.com/Titli03/Serverless/assets/89897324/7b5820c6-0db3-47cb-95e1-4ecf4ca286a4)
-
 ![image](https://github.com/Titli03/Serverless/assets/89897324/79283ef6-be21-407a-95db-4716ad26491d)
 
 
