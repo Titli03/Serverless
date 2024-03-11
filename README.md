@@ -12,6 +12,7 @@ When you invoke your REST API, API Gateway routes the request to your Lambda fun
 The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
 
 Create, update, and delete an item.
+![image](https://github.com/Titli03/Serverless/assets/89897324/1e5edaf3-70b5-43ae-9564-8b0c7418b219)
 
 Read an item.
 
