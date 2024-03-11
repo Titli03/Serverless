@@ -18,7 +18,7 @@ The POST method on the DynamoDBManager resource supports the following DynamoDB 
 
 - Scan an item.
 
-Other operations (echo, ping), not related to DynamoDB, that you can use for testing.
+- Other operations (echo, ping), not related to DynamoDB, that you can use for testing.
 
 The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
@@ -33,8 +33,6 @@ The following is a sample request payload for a DynamoDB read item operation:
 ![image](https://github.com/Titli03/Serverless/assets/89897324/ad551c74-acf0-4186-bf33-d6764b6a8865)
 
 
-
-
 ## Setup
 ### Create Lambda IAM Role
 Create the execution role that gives your function permission to access AWS resources.
@@ -45,7 +43,15 @@ To create an execution role
 
 2. Choose Create role.
 
-3. Create a role with the following properties. Trusted entity – Lambda.Role name – lambda-apigateway-role. Permissions – Custom policy with permission to DynamoDB and CloudWatch Logs. This custom policy has the permissions that the function needs to write data to DynamoDB and upload logs.
+3. Create a role with the following properties.
+- Trusted entity – Lambda.
+- Role name – lambda-apigateway-role.
+- Permissions – Custom policy with permission to DynamoDB and CloudWatch Logs. This custom policy has the permissions that the function needs to write data to DynamoDB and upload logs.
+
+![image](https://github.com/Titli03/Serverless/assets/89897324/7b5820c6-0db3-47cb-95e1-4ecf4ca286a4)
+
+![image](https://github.com/Titli03/Serverless/assets/89897324/79283ef6-be21-407a-95db-4716ad26491d)
+
 
 
 
