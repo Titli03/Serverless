@@ -1,12 +1,10 @@
 # Serverless CRUD Operation and Load test
-## Serverless CRUD Operation and Load test
-### Serverless CRUD Operation and Load test
 
 This project will demonstrate the creation of CRUD microservice using Serverless services, Lambda function, API gateway and DynamoDB.
 
 You can create a Lambda function (LambdaFunctionOverHttps) using the AWS Lambda console. Next, you create a DynamoDB (lambda-apigateway) table using the DynamoDB console. Next, you create an REST API (DynamoDBOperations) using  the API Gateway console and define one method (POST) on it. Then you test your API.
 
-Design Overview:
+## Design Overview:
 
 When you invoke your REST API, API Gateway routes the request to your Lambda function. The method (POST) for REST API (DynamoDBManager) is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function. The Lambda function will run the logic (as per the code updated in the function) interacts with DynamoDB and returns a response to API Gateway. API Gateway then returns a response to you.
 
@@ -31,23 +29,21 @@ The following is a sample request payload for a DynamoDB read item operation:
 
 
 
-Setup
-Create Lambda IAM Role
+## Setup
+### Create Lambda IAM Role
 Create the execution role that gives your function permission to access AWS resources.
 
 To create an execution role
 
-Open the roles page in the IAM console.
+1. Open the roles page in the IAM console.
 
-Choose Create role.
+2. Choose Create role.
 
-Create a role with the following properties. Trusted entity – Lambda.Role name – lambda-apigateway-role. Permissions – Custom policy with permission to DynamoDB and CloudWatch Logs. This custom policy has the permissions that the function needs to write data to DynamoDB and upload logs.
-
-
+3. Create a role with the following properties. Trusted entity – Lambda.Role name – lambda-apigateway-role. Permissions – Custom policy with permission to DynamoDB and CloudWatch Logs. This custom policy has the permissions that the function needs to write data to DynamoDB and upload logs.
 
 
 
-Create Lambda Function
+## Create Lambda Function
 To create the function
 
 1. Click "Create function" in AWS Lambda Console
