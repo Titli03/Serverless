@@ -70,7 +70,9 @@ To create the function
 
 4. Replace the boilerplate coding with the following code snippet and click "Save"
 
+![image](https://github.com/Titli03/Serverless/assets/89897324/83cf137e-a46d-497c-9857-1eb1010f9817)
 
+![image](https://github.com/Titli03/Serverless/assets/89897324/8b708898-b2cc-43af-aece-682d983f59b5)
 
 
 
