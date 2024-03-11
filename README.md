@@ -88,7 +88,11 @@ Let's test our newly created function. We haven't created DynamoDB and the API y
 
 
 2. Paste the following JSON into the event. The field "operation" dictates what the lambda function will perform. In this case, it'd simply return the payload from input event as output. Click "Create" to save
-![image](https://github.com/Titli03/Serverless/assets/89897324/5e11fcd6-e0bb-4a7c-8918-1ef9400a2733)
+
+![image](https://github.com/Titli03/Serverless/assets/89897324/d5854c6e-3df7-4c6f-ab4b-8c6563044a71)
+![image](https://github.com/Titli03/Serverless/assets/89897324/5a553c5d-2374-4be3-a547-bf6ac040cf8d)
+
+
 
 
 
