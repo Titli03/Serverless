@@ -63,6 +63,8 @@ To create the function
 
 3. Click "Create function"
 
+![image](https://github.com/Titli03/Serverless/assets/89897324/275c8f1c-9831-45f1-bd60-c5e16930ccd4)
+
 
 
 
