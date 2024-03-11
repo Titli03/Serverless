@@ -1,3 +1,5 @@
+![image](https://github.com/Titli03/Serverless/assets/89897324/582f171a-2b1b-493c-ae8a-97fa7df38af5)
+
 # Serverless CRUD Operation and Load test
 
 This project will demonstrate the creation of CRUD microservice using Serverless services, Lambda function, API gateway and DynamoDB.
@@ -21,10 +23,12 @@ Other operations (echo, ping), not related to DynamoDB, that you can use for tes
 The request payload you send in the POST request identifies the DynamoDB operation and provides necessary data. For example:
 
 The following is a sample request payload for a DynamoDB create item operation: 
+![image](https://github.com/Titli03/Serverless/assets/89897324/29216be2-8086-462e-ba8c-25c15e23d7e3)
 
 
 
 The following is a sample request payload for a DynamoDB read item operation:
+![image](https://github.com/Titli03/Serverless/assets/89897324/ad551c74-acf0-4186-bf33-d6764b6a8865)
 
 
 
@@ -43,7 +47,7 @@ To create an execution role
 
 
 
-## Create Lambda Function
+### Create Lambda Function
 To create the function
 
 1. Click "Create function" in AWS Lambda Console
@@ -61,7 +65,7 @@ To create the function
 
 
 
-Test Lambda Function
+### Test Lambda Function
 Let's test our newly created function. We haven't created DynamoDB and the API yet, so we'll do a sample echo operation. The function should output whatever input we pass.
 
 
@@ -83,7 +87,7 @@ Let's test our newly created function. We haven't created DynamoDB and the API y
 
 We're all set to create DynamoDB table and an API using our lambda as backend!
 
-Create DynamoDB Table
+### Create DynamoDB Table
 Create the DynamoDB table that the Lambda function uses.
 
 To create a DynamoDB table
@@ -102,7 +106,7 @@ To create a DynamoDB table
 
 
 
-Create API
+### Create API
 To create the API
 
 1. Go to API Gateway console
@@ -137,7 +141,7 @@ Click "Actions", then click "Create Resource"
 
 Our API-Lambda integration is done!
 
-Deploy the API
+### Deploy the API
 In this step, you deploy the API that you created to a stage called prod.
 
 1. Select "Deploy API"
@@ -146,7 +150,7 @@ In this step, you deploy the API that you created to a stage called prod.
 
 3. We're all set to run our solution! To invoke our API endpoint, we need the endpoint URL. In the "Stages" screen, expand the stage "Prod", select "POST" method, and copy the "Invoke URL" from screen
 
-Running our solution
+### Running our solution
 1. The Lambda function supports using the create operation to create an item in your DynamoDB table. To request this operation, use the following JSON
 
 2. To execute our API from local machine, we are going to use Postman and Curl command. You can choose either method based on your convenience and familiarity.
@@ -161,7 +165,7 @@ $ curl -X POST -d "{\"operation\":\"create\",\"tableName\":\"lambda-apigateway\"
 4. To get all the inserted items from the table, we can use the "list" operation of Lambda using the same API. Pass the following JSON to the API, and it will return all the items from the Dynamo table
 
 
-Performance test using Postman
+## Performance test using Postman
 1. Install native desktop version postman tool and sign in to an account.
 
 2. Create new collection and post method.
@@ -173,7 +177,8 @@ Performance test using Postman
 
 5. Then I updated the Lambda configuration by increasing 1024 MB Memory and 10 sec time out and now if I run the performance test you can see the average response time is 283 ms (decreased) as per below performance report.
 
-Cleaning up DynamoDB
+## Cleanup 
+### Cleaning up DynamoDB
 1. To delete the table, from DynamoDB console, select the table "lambda-apigateway", and click "Delete table" 
 
 2. To delete the Lambda, from the Lambda console, select lambda "LambdaFunctionOverHttps", click "Actions", then click Delete
